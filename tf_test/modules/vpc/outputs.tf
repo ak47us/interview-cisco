@@ -1,5 +1,6 @@
 output "id" {
   description = "The id of the provisioned VPC"
+  value       = aws_subnet.public_subnets.*.id
 }
 
 output "public_subnets" {

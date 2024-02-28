@@ -1,0 +1,645 @@
+ak@Alek-Desktop:/mnt/c/Users/Aleksander Kochapski/PycharmProjects/interview-cisco/tf_test/sandbox$ terraform apply
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # module.sandbox_vpc.aws_eip.nat_eip[0] will be created
+  + resource "aws_eip" "nat_eip" {
+      + allocation_id        = (known after apply)
+      + association_id       = (known after apply)
+      + carrier_ip           = (known after apply)
+      + customer_owned_ip    = (known after apply)
+      + domain               = (known after apply)
+      + id                   = (known after apply)
+      + instance             = (known after apply)
+      + network_border_group = (known after apply)
+      + network_interface    = (known after apply)
+      + private_dns          = (known after apply)
+      + private_ip           = (known after apply)
+      + public_dns           = (known after apply)
+      + public_ip            = (known after apply)
+      + public_ipv4_pool     = (known after apply)
+      + tags                 = {
+          + "Name" = "sandbox_nat_eip"
+        }
+      + tags_all             = {
+          + "Name" = "sandbox_nat_eip"
+        }
+      + vpc                  = true
+    }
+
+  # module.sandbox_vpc.aws_eip.nat_eip[1] will be created
+  + resource "aws_eip" "nat_eip" {
+      + allocation_id        = (known after apply)
+      + association_id       = (known after apply)
+      + carrier_ip           = (known after apply)
+      + customer_owned_ip    = (known after apply)
+      + domain               = (known after apply)
+      + id                   = (known after apply)
+      + instance             = (known after apply)
+      + network_border_group = (known after apply)
+      + network_interface    = (known after apply)
+      + private_dns          = (known after apply)
+      + private_ip           = (known after apply)
+      + public_dns           = (known after apply)
+      + public_ip            = (known after apply)
+      + public_ipv4_pool     = (known after apply)
+      + tags                 = {
+          + "Name" = "sandbox_nat_eip"
+        }
+      + tags_all             = {
+          + "Name" = "sandbox_nat_eip"
+        }
+      + vpc                  = true
+    }
+
+  # module.sandbox_vpc.aws_eip.nat_eip[2] will be created
+  + resource "aws_eip" "nat_eip" {
+      + allocation_id        = (known after apply)
+      + association_id       = (known after apply)
+      + carrier_ip           = (known after apply)
+      + customer_owned_ip    = (known after apply)
+      + domain               = (known after apply)
+      + id                   = (known after apply)
+      + instance             = (known after apply)
+      + network_border_group = (known after apply)
+      + network_interface    = (known after apply)
+      + private_dns          = (known after apply)
+      + private_ip           = (known after apply)
+      + public_dns           = (known after apply)
+      + public_ip            = (known after apply)
+      + public_ipv4_pool     = (known after apply)
+      + tags                 = {
+          + "Name" = "sandbox_nat_eip"
+        }
+      + tags_all             = {
+          + "Name" = "sandbox_nat_eip"
+        }
+      + vpc                  = true
+    }
+
+  # module.sandbox_vpc.aws_internet_gateway.internet_gw will be created
+  + resource "aws_internet_gateway" "internet_gw" {
+      + arn      = (known after apply)
+      + id       = (known after apply)
+      + owner_id = (known after apply)
+      + tags     = {
+          + "Name" = "sandbox_internet_gw"
+        }
+      + tags_all = {
+          + "Name" = "sandbox_internet_gw"
+        }
+      + vpc_id   = (known after apply)
+    }
+
+  # module.sandbox_vpc.aws_nat_gateway.nat_gw[0] will be created
+  + resource "aws_nat_gateway" "nat_gw" {
+      + allocation_id                      = (known after apply)
+      + association_id                     = (known after apply)
+      + connectivity_type                  = "public"
+      + id                                 = (known after apply)
+      + network_interface_id               = (known after apply)
+      + private_ip                         = (known after apply)
+      + public_ip                          = (known after apply)
+      + secondary_private_ip_address_count = (known after apply)
+      + secondary_private_ip_addresses     = (known after apply)
+      + subnet_id                          = (known after apply)
+      + tags                               = {
+          + "Name" = "sandbox_nat_gw"
+        }
+      + tags_all                           = {
+          + "Name" = "sandbox_nat_gw"
+        }
+    }
+
+  # module.sandbox_vpc.aws_nat_gateway.nat_gw[1] will be created
+  + resource "aws_nat_gateway" "nat_gw" {
+      + allocation_id                      = (known after apply)
+      + association_id                     = (known after apply)
+      + connectivity_type                  = "public"
+      + id                                 = (known after apply)
+      + network_interface_id               = (known after apply)
+      + private_ip                         = (known after apply)
+      + public_ip                          = (known after apply)
+      + secondary_private_ip_address_count = (known after apply)
+      + secondary_private_ip_addresses     = (known after apply)
+      + subnet_id                          = (known after apply)
+      + tags                               = {
+          + "Name" = "sandbox_nat_gw"
+        }
+      + tags_all                           = {
+          + "Name" = "sandbox_nat_gw"
+        }
+    }
+
+  # module.sandbox_vpc.aws_nat_gateway.nat_gw[2] will be created
+  + resource "aws_nat_gateway" "nat_gw" {
+      + allocation_id                      = (known after apply)
+      + association_id                     = (known after apply)
+      + connectivity_type                  = "public"
+      + id                                 = (known after apply)
+      + network_interface_id               = (known after apply)
+      + private_ip                         = (known after apply)
+      + public_ip                          = (known after apply)
+      + secondary_private_ip_address_count = (known after apply)
+      + secondary_private_ip_addresses     = (known after apply)
+      + subnet_id                          = (known after apply)
+      + tags                               = {
+          + "Name" = "sandbox_nat_gw"
+        }
+      + tags_all                           = {
+          + "Name" = "sandbox_nat_gw"
+        }
+    }
+
+  # module.sandbox_vpc.aws_route_table.lambda_function_rt[0] will be created
+  + resource "aws_route_table" "lambda_function_rt" {
+      + arn              = (known after apply)
+      + id               = (known after apply)
+      + owner_id         = (known after apply)
+      + propagating_vgws = (known after apply)
+      + route            = [
+          + {
+              + carrier_gateway_id         = ""
+              + cidr_block                 = "0.0.0.0/0"
+              + core_network_arn           = ""
+              + destination_prefix_list_id = ""
+              + egress_only_gateway_id     = ""
+              + gateway_id                 = ""
+              + ipv6_cidr_block            = ""
+              + local_gateway_id           = ""
+              + nat_gateway_id             = (known after apply)
+              + network_interface_id       = ""
+              + transit_gateway_id         = ""
+              + vpc_endpoint_id            = ""
+              + vpc_peering_connection_id  = ""
+            },
+        ]
+      + tags             = {
+          + "Name" = "sandbox_lambda_function_rt_a"
+        }
+      + tags_all         = {
+          + "Name" = "sandbox_lambda_function_rt_a"
+        }
+      + vpc_id           = (known after apply)
+    }
+
+  # module.sandbox_vpc.aws_route_table.lambda_function_rt[1] will be created
+  + resource "aws_route_table" "lambda_function_rt" {
+      + arn              = (known after apply)
+      + id               = (known after apply)
+      + owner_id         = (known after apply)
+      + propagating_vgws = (known after apply)
+      + route            = [
+          + {
+              + carrier_gateway_id         = ""
+              + cidr_block                 = "0.0.0.0/0"
+              + core_network_arn           = ""
+              + destination_prefix_list_id = ""
+              + egress_only_gateway_id     = ""
+              + gateway_id                 = ""
+              + ipv6_cidr_block            = ""
+              + local_gateway_id           = ""
+              + nat_gateway_id             = (known after apply)
+              + network_interface_id       = ""
+              + transit_gateway_id         = ""
+              + vpc_endpoint_id            = ""
+              + vpc_peering_connection_id  = ""
+            },
+        ]
+      + tags             = {
+          + "Name" = "sandbox_lambda_function_rt_b"
+        }
+      + tags_all         = {
+          + "Name" = "sandbox_lambda_function_rt_b"
+        }
+      + vpc_id           = (known after apply)
+    }
+
+  # module.sandbox_vpc.aws_route_table.lambda_function_rt[2] will be created
+  + resource "aws_route_table" "lambda_function_rt" {
+      + arn              = (known after apply)
+      + id               = (known after apply)
+      + owner_id         = (known after apply)
+      + propagating_vgws = (known after apply)
+      + route            = [
+          + {
+              + carrier_gateway_id         = ""
+              + cidr_block                 = "0.0.0.0/0"
+              + core_network_arn           = ""
+              + destination_prefix_list_id = ""
+              + egress_only_gateway_id     = ""
+              + gateway_id                 = ""
+              + ipv6_cidr_block            = ""
+              + local_gateway_id           = ""
+              + nat_gateway_id             = (known after apply)
+              + network_interface_id       = ""
+              + transit_gateway_id         = ""
+              + vpc_endpoint_id            = ""
+              + vpc_peering_connection_id  = ""
+            },
+        ]
+      + tags             = {
+          + "Name" = "sandbox_lambda_function_rt_c"
+        }
+      + tags_all         = {
+          + "Name" = "sandbox_lambda_function_rt_c"
+        }
+      + vpc_id           = (known after apply)
+    }
+
+  # module.sandbox_vpc.aws_route_table.public_rt will be created
+  + resource "aws_route_table" "public_rt" {
+      + arn              = (known after apply)
+      + id               = (known after apply)
+      + owner_id         = (known after apply)
+      + propagating_vgws = (known after apply)
+      + route            = [
+          + {
+              + carrier_gateway_id         = ""
+              + cidr_block                 = "0.0.0.0/0"
+              + core_network_arn           = ""
+              + destination_prefix_list_id = ""
+              + egress_only_gateway_id     = ""
+              + gateway_id                 = (known after apply)
+              + ipv6_cidr_block            = ""
+              + local_gateway_id           = ""
+              + nat_gateway_id             = ""
+              + network_interface_id       = ""
+              + transit_gateway_id         = ""
+              + vpc_endpoint_id            = ""
+              + vpc_peering_connection_id  = ""
+            },
+        ]
+      + tags             = {
+          + "Name" = "sandbox_public_rt"
+        }
+      + tags_all         = {
+          + "Name" = "sandbox_public_rt"
+        }
+      + vpc_id           = (known after apply)
+    }
+
+  # module.sandbox_vpc.aws_route_table_association.private_rta[0] will be created
+  + resource "aws_route_table_association" "private_rta" {
+      + id             = (known after apply)
+      + route_table_id = (known after apply)
+      + subnet_id      = (known after apply)
+    }
+
+  # module.sandbox_vpc.aws_route_table_association.private_rta[1] will be created
+  + resource "aws_route_table_association" "private_rta" {
+      + id             = (known after apply)
+      + route_table_id = (known after apply)
+      + subnet_id      = (known after apply)
+    }
+
+  # module.sandbox_vpc.aws_route_table_association.private_rta[2] will be created
+  + resource "aws_route_table_association" "private_rta" {
+      + id             = (known after apply)
+      + route_table_id = (known after apply)
+      + subnet_id      = (known after apply)
+    }
+
+  # module.sandbox_vpc.aws_route_table_association.public_rta[0] will be created
+  + resource "aws_route_table_association" "public_rta" {
+      + id             = (known after apply)
+      + route_table_id = (known after apply)
+      + subnet_id      = (known after apply)
+    }
+
+  # module.sandbox_vpc.aws_route_table_association.public_rta[1] will be created
+  + resource "aws_route_table_association" "public_rta" {
+      + id             = (known after apply)
+      + route_table_id = (known after apply)
+      + subnet_id      = (known after apply)
+    }
+
+  # module.sandbox_vpc.aws_route_table_association.public_rta[2] will be created
+  + resource "aws_route_table_association" "public_rta" {
+      + id             = (known after apply)
+      + route_table_id = (known after apply)
+      + subnet_id      = (known after apply)
+    }
+
+  # module.sandbox_vpc.aws_subnet.private_subnets[0] will be created
+  + resource "aws_subnet" "private_subnets" {
+      + arn                                            = (known after apply)
+      + assign_ipv6_address_on_creation                = false
+      + availability_zone                              = "us-east-1a"
+      + availability_zone_id                           = (known after apply)
+      + cidr_block                                     = "172.33.100.0/24"
+      + enable_dns64                                   = false
+      + enable_resource_name_dns_a_record_on_launch    = false
+      + enable_resource_name_dns_aaaa_record_on_launch = false
+      + id                                             = (known after apply)
+      + ipv6_cidr_block_association_id                 = (known after apply)
+      + ipv6_native                                    = false
+      + map_public_ip_on_launch                        = true
+      + owner_id                                       = (known after apply)
+      + private_dns_hostname_type_on_launch            = (known after apply)
+      + tags                                           = {
+          + "Name" = "sandbox_public_subnet_a"
+        }
+      + tags_all                                       = {
+          + "Name" = "sandbox_public_subnet_a"
+        }
+      + vpc_id                                         = (known after apply)
+    }
+
+  # module.sandbox_vpc.aws_subnet.private_subnets[1] will be created
+  + resource "aws_subnet" "private_subnets" {
+      + arn                                            = (known after apply)
+      + assign_ipv6_address_on_creation                = false
+      + availability_zone                              = "us-east-1b"
+      + availability_zone_id                           = (known after apply)
+      + cidr_block                                     = "172.33.110.0/24"
+      + enable_dns64                                   = false
+      + enable_resource_name_dns_a_record_on_launch    = false
+      + enable_resource_name_dns_aaaa_record_on_launch = false
+      + id                                             = (known after apply)
+      + ipv6_cidr_block_association_id                 = (known after apply)
+      + ipv6_native                                    = false
+      + map_public_ip_on_launch                        = true
+      + owner_id                                       = (known after apply)
+      + private_dns_hostname_type_on_launch            = (known after apply)
+      + tags                                           = {
+          + "Name" = "sandbox_public_subnet_b"
+        }
+      + tags_all                                       = {
+          + "Name" = "sandbox_public_subnet_b"
+        }
+      + vpc_id                                         = (known after apply)
+    }
+
+  # module.sandbox_vpc.aws_subnet.private_subnets[2] will be created
+  + resource "aws_subnet" "private_subnets" {
+      + arn                                            = (known after apply)
+      + assign_ipv6_address_on_creation                = false
+      + availability_zone                              = "us-east-1c"
+      + availability_zone_id                           = (known after apply)
+      + cidr_block                                     = "172.33.120.0/24"
+      + enable_dns64                                   = false
+      + enable_resource_name_dns_a_record_on_launch    = false
+      + enable_resource_name_dns_aaaa_record_on_launch = false
+      + id                                             = (known after apply)
+      + ipv6_cidr_block_association_id                 = (known after apply)
+      + ipv6_native                                    = false
+      + map_public_ip_on_launch                        = true
+      + owner_id                                       = (known after apply)
+      + private_dns_hostname_type_on_launch            = (known after apply)
+      + tags                                           = {
+          + "Name" = "sandbox_public_subnet_c"
+        }
+      + tags_all                                       = {
+          + "Name" = "sandbox_public_subnet_c"
+        }
+      + vpc_id                                         = (known after apply)
+    }
+
+  # module.sandbox_vpc.aws_subnet.public_subnets[0] will be created
+  + resource "aws_subnet" "public_subnets" {
+      + arn                                            = (known after apply)
+      + assign_ipv6_address_on_creation                = false
+      + availability_zone                              = "us-east-1a"
+      + availability_zone_id                           = (known after apply)
+      + cidr_block                                     = "172.33.10.0/24"
+      + enable_dns64                                   = false
+      + enable_resource_name_dns_a_record_on_launch    = false
+      + enable_resource_name_dns_aaaa_record_on_launch = false
+      + id                                             = (known after apply)
+      + ipv6_cidr_block_association_id                 = (known after apply)
+      + ipv6_native                                    = false
+      + map_public_ip_on_launch                        = true
+      + owner_id                                       = (known after apply)
+      + private_dns_hostname_type_on_launch            = (known after apply)
+      + tags                                           = {
+          + "Name" = "sandbox_public_subnet_a"
+        }
+      + tags_all                                       = {
+          + "Name" = "sandbox_public_subnet_a"
+        }
+      + vpc_id                                         = (known after apply)
+    }
+
+  # module.sandbox_vpc.aws_subnet.public_subnets[1] will be created
+  + resource "aws_subnet" "public_subnets" {
+      + arn                                            = (known after apply)
+      + assign_ipv6_address_on_creation                = false
+      + availability_zone                              = "us-east-1b"
+      + availability_zone_id                           = (known after apply)
+      + cidr_block                                     = "172.33.20.0/24"
+      + enable_dns64                                   = false
+      + enable_resource_name_dns_a_record_on_launch    = false
+      + enable_resource_name_dns_aaaa_record_on_launch = false
+      + id                                             = (known after apply)
+      + ipv6_cidr_block_association_id                 = (known after apply)
+      + ipv6_native                                    = false
+      + map_public_ip_on_launch                        = true
+      + owner_id                                       = (known after apply)
+      + private_dns_hostname_type_on_launch            = (known after apply)
+      + tags                                           = {
+          + "Name" = "sandbox_public_subnet_b"
+        }
+      + tags_all                                       = {
+          + "Name" = "sandbox_public_subnet_b"
+        }
+      + vpc_id                                         = (known after apply)
+    }
+
+  # module.sandbox_vpc.aws_subnet.public_subnets[2] will be created
+  + resource "aws_subnet" "public_subnets" {
+      + arn                                            = (known after apply)
+      + assign_ipv6_address_on_creation                = false
+      + availability_zone                              = "us-east-1c"
+      + availability_zone_id                           = (known after apply)
+      + cidr_block                                     = "172.33.30.0/24"
+      + enable_dns64                                   = false
+      + enable_resource_name_dns_a_record_on_launch    = false
+      + enable_resource_name_dns_aaaa_record_on_launch = false
+      + id                                             = (known after apply)
+      + ipv6_cidr_block_association_id                 = (known after apply)
+      + ipv6_native                                    = false
+      + map_public_ip_on_launch                        = true
+      + owner_id                                       = (known after apply)
+      + private_dns_hostname_type_on_launch            = (known after apply)
+      + tags                                           = {
+          + "Name" = "sandbox_public_subnet_c"
+        }
+      + tags_all                                       = {
+          + "Name" = "sandbox_public_subnet_c"
+        }
+      + vpc_id                                         = (known after apply)
+    }
+
+  # module.sandbox_vpc.aws_vpc.application_vpc will be created
+  + resource "aws_vpc" "application_vpc" {
+      + arn                                  = (known after apply)
+      + cidr_block                           = "172.33.0.0/16"
+      + default_network_acl_id               = (known after apply)
+      + default_route_table_id               = (known after apply)
+      + default_security_group_id            = (known after apply)
+      + dhcp_options_id                      = (known after apply)
+      + enable_dns_hostnames                 = true
+      + enable_dns_support                   = true
+      + enable_network_address_usage_metrics = (known after apply)
+      + id                                   = (known after apply)
+      + instance_tenancy                     = "default"
+      + ipv6_association_id                  = (known after apply)
+      + ipv6_cidr_block                      = (known after apply)
+      + ipv6_cidr_block_network_border_group = (known after apply)
+      + main_route_table_id                  = (known after apply)
+      + owner_id                             = (known after apply)
+      + tags                                 = {
+          + "Name" = "sandbox_application_vpc"
+        }
+      + tags_all                             = {
+          + "Name" = "sandbox_application_vpc"
+        }
+    }
+
+Plan: 24 to add, 0 to change, 0 to destroy.
+
+Changes to Outputs:
+  + vpc_id = [
+      + (known after apply),
+      + (known after apply),
+      + (known after apply),
+    ]
+╷
+│ Warning: Version constraints inside provider configuration blocks are deprecated
+│
+│   on provider.tf line 19, in provider "aws":
+│   19:   version             = ">= 2.46.0"
+│
+│ Terraform 0.13 and earlier allowed provider version constraints inside the provider configuration block, but that is now deprecated and will be removed in a future version of Terraform. To silence
+│ this warning, move the provider version constraint into the required_providers block.
+╵
+╷
+│ Warning: Argument is deprecated
+│
+│   with module.sandbox_vpc.aws_eip.nat_eip,
+│   on ../modules/vpc/main.tf line 66, in resource "aws_eip" "nat_eip":
+│   66:   vpc   = true
+│
+│ use domain attribute instead
+│
+│ (and 3 more similar warnings elsewhere)
+╵
+
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value: yes
+
+module.sandbox_vpc.aws_vpc.application_vpc: Creating...
+module.sandbox_vpc.aws_vpc.application_vpc: Still creating... [10s elapsed]
+module.sandbox_vpc.aws_vpc.application_vpc: Creation complete after 13s [id=vpc-0ebb078e837f0d94e]
+module.sandbox_vpc.aws_internet_gateway.internet_gw: Creating...
+module.sandbox_vpc.aws_subnet.public_subnets[0]: Creating...
+module.sandbox_vpc.aws_subnet.private_subnets[2]: Creating...
+module.sandbox_vpc.aws_subnet.private_subnets[0]: Creating...
+module.sandbox_vpc.aws_subnet.public_subnets[1]: Creating...
+module.sandbox_vpc.aws_subnet.private_subnets[1]: Creating...
+module.sandbox_vpc.aws_subnet.public_subnets[2]: Creating...
+module.sandbox_vpc.aws_internet_gateway.internet_gw: Creation complete after 1s [id=igw-0e241db3e49e7d77f]
+module.sandbox_vpc.aws_route_table.public_rt: Creating...
+module.sandbox_vpc.aws_route_table.public_rt: Creation complete after 1s [id=rtb-07d2da326b2a1987d]
+module.sandbox_vpc.aws_subnet.public_subnets[0]: Still creating... [10s elapsed]
+module.sandbox_vpc.aws_subnet.private_subnets[2]: Still creating... [10s elapsed]
+module.sandbox_vpc.aws_subnet.private_subnets[0]: Still creating... [10s elapsed]
+module.sandbox_vpc.aws_subnet.public_subnets[1]: Still creating... [10s elapsed]
+module.sandbox_vpc.aws_subnet.private_subnets[1]: Still creating... [10s elapsed]
+module.sandbox_vpc.aws_subnet.public_subnets[2]: Still creating... [10s elapsed]
+module.sandbox_vpc.aws_subnet.public_subnets[1]: Creation complete after 11s [id=subnet-074d86734f9794fd0]
+module.sandbox_vpc.aws_subnet.public_subnets[2]: Creation complete after 11s [id=subnet-0179776375ee74132]
+module.sandbox_vpc.aws_subnet.private_subnets[0]: Creation complete after 11s [id=subnet-0b47c6fd568026ff9]
+module.sandbox_vpc.aws_subnet.public_subnets[0]: Creation complete after 11s [id=subnet-0e6da852ed7e65b6f]
+module.sandbox_vpc.aws_route_table_association.public_rta[2]: Creating...
+module.sandbox_vpc.aws_route_table_association.public_rta[0]: Creating...
+module.sandbox_vpc.aws_route_table_association.public_rta[1]: Creating...
+module.sandbox_vpc.aws_eip.nat_eip[0]: Creating...
+module.sandbox_vpc.aws_eip.nat_eip[2]: Creating...
+module.sandbox_vpc.aws_eip.nat_eip[1]: Creating...
+module.sandbox_vpc.aws_subnet.private_subnets[2]: Creation complete after 11s [id=subnet-070f8a2ef975fbd1c]
+module.sandbox_vpc.aws_subnet.private_subnets[1]: Creation complete after 11s [id=subnet-057ba3e3b0215c1fa]
+module.sandbox_vpc.aws_route_table_association.public_rta[1]: Creation complete after 1s [id=rtbassoc-0c39c23a710fc88d1]
+module.sandbox_vpc.aws_route_table_association.public_rta[2]: Creation complete after 1s [id=rtbassoc-0a245037189a902c3]
+module.sandbox_vpc.aws_route_table_association.public_rta[0]: Creation complete after 1s [id=rtbassoc-079985e3165f66ff6]
+module.sandbox_vpc.aws_eip.nat_eip[1]: Creation complete after 1s [id=eipalloc-06aaab522346a9c95]
+module.sandbox_vpc.aws_eip.nat_eip[0]: Creation complete after 1s [id=eipalloc-0fb88a92ccdab9af1]
+module.sandbox_vpc.aws_eip.nat_eip[2]: Creation complete after 1s [id=eipalloc-0ab29eb24e223593c]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[2]: Creating...
+module.sandbox_vpc.aws_nat_gateway.nat_gw[1]: Creating...
+module.sandbox_vpc.aws_nat_gateway.nat_gw[0]: Creating...
+module.sandbox_vpc.aws_nat_gateway.nat_gw[0]: Still creating... [10s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[1]: Still creating... [10s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[2]: Still creating... [10s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[0]: Still creating... [20s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[1]: Still creating... [20s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[2]: Still creating... [20s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[1]: Still creating... [30s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[0]: Still creating... [30s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[2]: Still creating... [30s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[1]: Still creating... [40s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[0]: Still creating... [40s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[2]: Still creating... [40s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[1]: Still creating... [50s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[0]: Still creating... [50s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[2]: Still creating... [50s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[0]: Still creating... [1m0s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[1]: Still creating... [1m0s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[2]: Still creating... [1m0s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[0]: Still creating... [1m10s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[1]: Still creating... [1m10s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[2]: Still creating... [1m10s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[2]: Still creating... [1m20s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[0]: Still creating... [1m20s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[1]: Still creating... [1m20s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[1]: Still creating... [1m30s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[2]: Still creating... [1m30s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[0]: Still creating... [1m30s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[0]: Creation complete after 1m34s [id=nat-08aa2c7c992a4c339]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[2]: Still creating... [1m40s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[1]: Still creating... [1m40s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[1]: Still creating... [1m50s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[2]: Still creating... [1m50s elapsed]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[2]: Creation complete after 1m54s [id=nat-0600b130c9320b560]
+module.sandbox_vpc.aws_nat_gateway.nat_gw[1]: Creation complete after 1m54s [id=nat-0fdf5cd2ea920d801]
+module.sandbox_vpc.aws_route_table.lambda_function_rt[1]: Creating...
+module.sandbox_vpc.aws_route_table.lambda_function_rt[2]: Creating...
+module.sandbox_vpc.aws_route_table.lambda_function_rt[0]: Creating...
+module.sandbox_vpc.aws_route_table.lambda_function_rt[1]: Creation complete after 2s [id=rtb-0ada13c027406841a]
+module.sandbox_vpc.aws_route_table.lambda_function_rt[2]: Creation complete after 2s [id=rtb-06ed20886411f9e84]
+module.sandbox_vpc.aws_route_table.lambda_function_rt[0]: Creation complete after 2s [id=rtb-025b298ba3767bd54]
+module.sandbox_vpc.aws_route_table_association.private_rta[1]: Creating...
+module.sandbox_vpc.aws_route_table_association.private_rta[0]: Creating...
+module.sandbox_vpc.aws_route_table_association.private_rta[2]: Creating...
+module.sandbox_vpc.aws_route_table_association.private_rta[2]: Creation complete after 0s [id=rtbassoc-0c145e99f0c8f256a]
+module.sandbox_vpc.aws_route_table_association.private_rta[1]: Creation complete after 0s [id=rtbassoc-0d26b209c006b7160]
+module.sandbox_vpc.aws_route_table_association.private_rta[0]: Creation complete after 0s [id=rtbassoc-0bcb69bdd87434501]
+╷
+│ Warning: Argument is deprecated
+│
+│   with module.sandbox_vpc.aws_eip.nat_eip[1],
+│   on ../modules/vpc/main.tf line 66, in resource "aws_eip" "nat_eip":
+│   66:   vpc   = true
+│
+│ use domain attribute instead
+│
+│ (and 2 more similar warnings elsewhere)
+╵
+
+Apply complete! Resources: 24 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+vpc_id = [
+  "subnet-0e6da852ed7e65b6f",
+  "subnet-074d86734f9794fd0",
+  "subnet-0179776375ee74132",
+]
+ak@Alek-Desktop:/mnt/c/Users/Aleksander Kochapski/PycharmProjects/interview-cisco/tf_test/sandbox$
